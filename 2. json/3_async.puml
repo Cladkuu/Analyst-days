@@ -1,0 +1,6 @@
+@startuml
+title Асинхронное сообщение
+
+A ->> B: [[http://example.com users_command:CreateUser]] 
+note right: указываем топик:название команды/события
+@enduml

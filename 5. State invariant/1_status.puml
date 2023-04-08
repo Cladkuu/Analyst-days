@@ -1,0 +1,17 @@
+@startuml
+
+
+boundary UI
+control order_service
+
+autonumber
+
+UI->order_service: отмени заказ с id 3
+
+note over order_service: order_status=CANCELLED
+
+order_service-->UI: заказ отменен
+
+
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml 
+box "Внутренняя веб-реализация"  #Business
+
+control Order_Service
+database Order_database
+
+control PaymentService
+database Payment_database
+end box
+
+@enduml
+

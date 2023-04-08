@@ -1,0 +1,32 @@
+@startuml
+
+autonumber
+
+actor Order_Provider order 10
+control Order_service order 20
+database Order_database order 30
+control Payment_service order 40
+database Payment_database order 50
+queue message_broker order 60
+control PVZ_service order 70
+database PVZ_database order 80
+
+
+
+Order_Provider->Order_service: создай заказ
+Order_service->Order_database: Создаем заказ в БД
+
+Order_service-->Payment_service: Создать задачу на оплату заказа
+Payment_service->Payment_database: создаем задачу \nна оплату в БД
+Payment_service-->Order_service: задача создана
+
+Order_service->message_broker: отправка команды на создание заказа в ПВЗ
+
+Order_service-->Order_Provider: заказ создан
+
+
+PVZ_service->message_broker: Получение сообщения \nиз кафки
+PVZ_service->PVZ_database: создаем заказ в БД
+
+
+@enduml

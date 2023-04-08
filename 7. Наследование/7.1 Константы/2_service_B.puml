@@ -1,0 +1,7 @@
+@startuml
+
+' Эндпоинты сервиса B
+!$B_Create_Role = "Post /roles"
+!$B_Get_Role = "GET /roles/{id}"
+
+@enduml

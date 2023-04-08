@@ -1,0 +1,7 @@
+@startuml
+title Синхронное сообщение
+
+A -> B: [[http://example.com POST /users]]
+note right: указываем endpoint
+
+@enduml

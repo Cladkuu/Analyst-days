@@ -1,0 +1,10 @@
+@startuml
+
+' Эндпоинты сервиса А
+!$A_Create_User = "POST /users"
+!$A_Get_User = "GET /users/{id}"
+
+@enduml
+
+
+

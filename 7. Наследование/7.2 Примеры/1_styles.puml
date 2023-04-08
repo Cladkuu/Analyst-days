@@ -1,0 +1,14 @@
+@startuml 
+skinparam {
+    DatabaseFontColor Black
+    DatabaseFontSize 14
+    QueueBackgroundColor Wheat
+    QueueBorderColor IndianRed
+    QueueBorderThickness 2
+    QueueFontColor Black
+    QueueFontSize 14
+}
+
+@enduml
+
+

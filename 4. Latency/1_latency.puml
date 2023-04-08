@@ -1,0 +1,22 @@
+@startuml
+
+' layout engine
+!pragma teoz true
+
+skinparam responseMessageBelowArrow true
+
+boundary UI
+control order_service
+
+{start} UI->order_service: POST /orders
+|||
+|||
+{final} order_service-->UI: order created: order_id
+
+{start} <-> {final}: 0 ... 500 ms
+
+
+@enduml
+
+
+

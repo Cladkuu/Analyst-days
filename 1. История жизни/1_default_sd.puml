@@ -1,0 +1,35 @@
+@startuml
+
+participant Order_Provider
+
+participant Order_service
+
+participant Payment_service
+participant Order_database
+participant PVZ_database
+
+participant Payment_database
+
+participant message_broker
+
+participant PVZ_service
+
+
+
+Order_Provider->Order_service: создай заказ
+Order_service->Order_database: Создаем заказ в БД
+
+Order_service-->Payment_service: Создать задачу на оплату заказа
+Payment_service->Payment_database: создаем задачу \nна оплату в БД
+Payment_service-->Order_service: задача создана
+
+Order_service->message_broker: отправка команды на создание заказа в ПВЗ
+
+Order_service-->Order_Provider: заказ создан
+
+
+PVZ_service->message_broker: Получение сообщения \nиз кафки
+PVZ_service->PVZ_database: создаем заказ в БД
+
+
+@enduml

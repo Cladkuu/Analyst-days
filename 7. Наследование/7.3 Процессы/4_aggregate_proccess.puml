@@ -1,0 +1,9 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/common.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/first.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/second.puml
+
+@enduml
+
+

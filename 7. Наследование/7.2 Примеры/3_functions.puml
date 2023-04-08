@@ -1,0 +1,13 @@
+@startuml 
+!function $get_shard($user_id)
+!local $sharding_key=100
+
+!if ($user_id>$sharding_key)
+   !return 2
+!endif
+
+!return 1
+!endfunction
+
+@enduml
+

@@ -1,0 +1,19 @@
+@startuml
+
+boundary "Внешняя система" as ext
+control "localisation_service" as loc
+
+autonumber
+
+==Создание задачи==
+
+ext->loc: Переведи лексемы
+loc--> ext: id задачи на перевод лексем
+
+==Опрос статуса задачи==
+loop task_status!='Выполнено'
+    ext->loc: узнать статус задачи
+    loc-->ext: вернуть текущий статус задачи
+end
+
+@enduml

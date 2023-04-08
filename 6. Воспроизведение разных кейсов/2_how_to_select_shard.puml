@@ -1,0 +1,26 @@
+@startuml
+boundary UI
+control user_service
+database shard_1
+database shard_2
+
+
+autonumber
+
+' объявляем переменную, храняющую id пользователя
+!$user_id=99
+
+UI->user_service: Get user info
+
+' ключ шардирования
+'!if ($user_id<100)
+'    user_service->shard_1: get user info from shard1
+'!else 
+'    user_service->shard_2: get user info from shard2
+'!endif
+
+note over shard_1, shard_2: в каком шарде хранятся \nнужные данные?
+
+
+user_service-->UI: return user info
+@enduml

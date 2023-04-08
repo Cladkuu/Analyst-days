@@ -1,0 +1,6 @@
+@startuml
+participant Артем
+participant Вадим
+participant Денис
+@enduml
+

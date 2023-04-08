@@ -1,0 +1,26 @@
+@startuml ff
+
+boundary UI
+control user_service
+database DB
+
+
+!function $get_shard($user_id)
+!local $sharding_condition=100
+
+!if ($user_id>$sharding_condition)
+   !return 2
+!endif
+
+!return 1
+!endfunction
+
+!$user_id=1011
+autonumber
+
+UI->user_service: Get user info
+user_service->DB: getting info from shard: $get_shard($user_id)
+user_service-->UI: return user info
+
+
+@enduml

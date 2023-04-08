@@ -1,0 +1,16 @@
+@startuml
+
+boundary UI
+control user_service
+database DB
+
+autonumber
+
+
+UI->user_service: Get user info
+
+user_service->DB: get user
+
+user_service-->UI: return user info
+
+@enduml

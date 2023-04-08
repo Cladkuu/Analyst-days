@@ -1,0 +1,5 @@
+@startuml
+
+A -> B: [\n   {\n      "guid": "407e215e-b060-4c2a-a630-b4c627f502eb",\n      "isActive": true,\n      "age": 35,\n      "address": "951 Dahl Court, Sanborn, Kansas, 4089",\n      "registered": "2016-06-08T05:01:55 -02:00",\n      "tags": [\n            "reprehenderit",\n            "deserunt"\n],\n      "friends": [\n         {\n            "id": 0,\n            "name": "Russell Burch"\n         }\n      ]\n   }\n]\n
+
+@enduml

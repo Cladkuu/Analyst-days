@@ -1,0 +1,17 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/2_single_file_for_constants.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/3_service_B_variables.puml
+
+autonumber
+
+admin->A: $A_Create_User
+admin->A: $A_Get_User
+
+admin->B: $B_Create_Role
+admin->B: $B_Get_Role
+
+@enduml
+
+
+
