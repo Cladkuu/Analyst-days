@@ -1,9 +1,11 @@
 @startuml
+autonumber
 
-!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/common.puml
-!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/first.puml
-!includeurl https://raw.githubusercontent.com/Cladkuu/sequence-diagram/main/5.%20variables/second.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/Analyst-days/main/7.%20%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.3%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B/1_participant.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/Analyst-days/main/7.%20%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.3%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B/2_first_proccess.puml
+!includeurl https://raw.githubusercontent.com/Cladkuu/Analyst-days/main/7.%20%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/7.3%20%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B/3_second_proccess.puml
 
 @enduml
+
 
 
