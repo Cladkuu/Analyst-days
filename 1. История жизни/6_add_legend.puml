@@ -6,7 +6,7 @@ box "Маркетплейсы" #LightBlue
 actor Order_Provider order 10
 end box
 
-box "ПВЗ: веб-реализация"  #Business
+box "Заказы"  #Business
 control Order_service order 20
 database Order_database order 30
 control Payment_service order 40
@@ -15,7 +15,7 @@ end box
 
 queue message_broker order 60
 
-box "ПВЗ: внутренняяы реализация"
+box "ПВЗ"
 control PVZ_service order 70
 database PVZ_database order 80
 end box
